@@ -16,3 +16,8 @@ body {
 	background: url(https://raw.githubusercontent.com/aboveaveragesoft/art-assets/master/logo/vector/Logo-noborder.svg);
 		
 	}
+
+a {
+	color:mediumseagreen,
+	text-decoration: none,
+}
