@@ -4,6 +4,7 @@
 
 .App-logo {
   height: 40vmin;
+  animation: App-logo-spin infinite 70s linear;
   pointer-events: none;
 }
 
@@ -14,18 +15,42 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #333333;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: inherit;
+  text-decoration: none;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
+.App-link:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 .App-link {
-  color: #61dafb;
+  color: #007e63;
+}
+
+button {
+  border: none;
+  color: white;
+  text-align: center;
+  
+  font-size: 16px;
+  background-color: #007e63;
+  padding: 15px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  transform: scale(15px);
 }
 
 @keyframes App-logo-spin {

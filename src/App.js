@@ -7,16 +7,18 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+          Above Average soft</p>
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          className="Neutron-Tek"
+          href="https://github.com/neutrontechnologies"
           target="_blank"
           rel="noopener noreferrer"
+          title="Check our Organization!"
         >
-          Learn React
+          <button>Organization page</button>
         </a>
+        
+        
       </header>
     </div>
   );
