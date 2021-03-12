@@ -24,7 +24,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
             title="Join our Discord server!">
-            <button>Discord</button>
+            <button className="discordbutton">Discord</button>
           </a>
         </div>
       </header>
