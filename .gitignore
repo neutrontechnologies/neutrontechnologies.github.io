@@ -12,11 +12,16 @@ package-lock.json
 # testing
 /coverage
 
+# Lockfiles
+package-lock.json
+yarn.lock
+
 # production
 /build
 
 # misc
 .DS_Store
+.eslintcache
 .env.local
 .env.development.local
 .env.test.local

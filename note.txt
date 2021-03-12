@@ -1,3 +1,0 @@
-start with this to learn react.js
-https://www.w3schools.com/react/
-have fun!
