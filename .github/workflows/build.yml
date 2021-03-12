@@ -25,9 +25,17 @@ jobs:
           node-version: 14
       - name: Install Dependendencies
         run: npm install
-      - name: Configure git
+      - name: Builg, configure git and push to gh-pages
         run: |
+          #!/bin/bash
+          git clone https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" out -b gh-pages
+          npm run build
+          rsync -vau build out/
+          cd out
+          git add --all .
           git config user.name "${GITHUB_ACTOR}"
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-      - name: Build
-        run: npm run deploy
+          git commit -m "ReactJS Site build: ${GITHUB_SHA}" || true
+          git push origin gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
