@@ -30,9 +30,9 @@ jobs:
           #!/bin/bash
           git clone "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" out -b gh-pages
           npm run build
+          rsync -vau --delete --exclude=.git build/ out
           cp CNAME out/
           cp README.md out/
-          rsync -vau build/ out
           cd out
           git add --all .
           git config user.name "${GITHUB_ACTOR}"
