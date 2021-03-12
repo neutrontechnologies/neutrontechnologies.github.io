@@ -25,10 +25,10 @@ jobs:
           node-version: 14
       - name: Install Dependendencies
         run: npm install
-      - name: Builg, configure git and push to gh-pages
+      - name: Build, configure git and push to gh-pages
         run: |
           #!/bin/bash
-          git clone https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" out -b gh-pages
+          git clone "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" out -b gh-pages
           npm run build
           rsync -vau build out/
           cd out
