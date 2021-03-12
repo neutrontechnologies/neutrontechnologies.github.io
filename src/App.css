@@ -53,6 +53,10 @@ button {
   border-radius: 8px;
 }
 
+.buttongroup {
+  display: flex;
+}
+
 button:hover {
   background-color: var(--secondary-colour);
   color: white;
