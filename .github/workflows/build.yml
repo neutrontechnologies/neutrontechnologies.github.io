@@ -30,6 +30,8 @@ jobs:
           #!/bin/bash
           git clone "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" out -b gh-pages
           npm run build
+          cp CNAME out/
+          cp README.md out/
           rsync -vau build out/
           cd out
           git add --all .
