@@ -1,10 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import styled from 'styled-components';
-
-const ButtonGroup = styled.div`
-  display: flex;
-`
 
 function App() {
   return (
@@ -12,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>Neutron Technologies</p>
-        <ButtonGroup>
+        <div className="ButtonGroup">
           <a
             className="NeutronButton"
             href="https://github.com/neutrontechnologies"
@@ -31,7 +26,7 @@ function App() {
             title="Join our Discord server!">
             <button>Discord</button>
           </a>
-        </ButtonGroup>
+        </div>
       </header>
     </div>
   );
