@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'MyFont';
-  src: local('MyFont'), url(./fonts/VarelaRound-Regular.ttf) format('ttf');
+  font-family: 'Varela Round';
+  src: local('Varela Round'), url(./fonts/VarelaRound-Regular.ttf) format('ttf');
 }
 body, button {
   margin: 0;
