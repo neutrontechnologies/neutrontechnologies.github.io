@@ -32,7 +32,7 @@ jobs:
           npm run build
           cp CNAME out/
           cp README.md out/
-          rsync -vau build out/
+          rsync -vau build/** out/
           cd out
           git add --all .
           git config user.name "${GITHUB_ACTOR}"
