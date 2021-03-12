@@ -14,7 +14,7 @@ function App() {
         <p>Neutron Technologies</p>
         <ButtonGroup>
           <a
-            className="Neutron-Tek"
+            className="NeutronButton"
             href="https://github.com/neutrontechnologies"
             target="_blank"
             rel="noopener noreferrer"
@@ -24,7 +24,7 @@ function App() {
           </a>
           &nbsp;
           <a
-            className="Neutron-Tek"
+            className="NeutronButton"
             href="https://discord.gg/HYrafUqq73"
             target="_blank"
             rel="noopener noreferrer"
