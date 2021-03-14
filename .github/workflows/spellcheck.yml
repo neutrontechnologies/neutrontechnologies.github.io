@@ -4,7 +4,7 @@ name: Typo CI
 on:
   push:
     branches-ignore:
-      - master
+      - gh-pages
 jobs:
   spellcheck:
     name: Typo CI (GitHub Action)
