@@ -26,6 +26,7 @@ function App() {
             title="Join our Discord server!">
             <button>Discord</button>
           </a>
+          <div class="webring">Proud member of Zoomer Hacking.<br /><a href="https://devnol.github.io/">&lt;- Prev</a> | <a href="https://stephenvk.xyz/ring/">All</a> | <a href="https://oscie.tk/">Next -&gt;</a></div>
         </div>
       </header>
     </div>

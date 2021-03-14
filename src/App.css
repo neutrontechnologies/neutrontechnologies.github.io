@@ -13,10 +13,23 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: reduce) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: none !important;
   }
+}
+
+a:visited {
+  color: var(--secondary-colour)
+}
+
+a:hover {
+  color: #FFFFFF;
+}
+
+a {
+  color:var(--primary-colour);
+  transition: all .5s ease;
 }
 
 .App-header {
@@ -69,4 +82,13 @@ button:hover {
   to {
     transform: rotate(360deg);
   }
+}
+
+.webring {
+  position: absolute;
+  bottom: 8px;
+  left: 0px;
+  width: 100%;
+  font-size: calc(10px + 1vmin);
+  text-align: center;
 }
