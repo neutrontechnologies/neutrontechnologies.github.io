@@ -19,6 +19,18 @@
   }
 }
 
+a:visited {
+  color: var(--secondary-colour)
+}
+
+a:hover {
+  color: #FFFFFF;
+}
+
+a {
+  color:var(--primary-colour);
+}
+
 .App-header {
   background-color: var(--background-colour); 
   min-height: 100vh;
@@ -69,4 +81,13 @@ button:hover {
   to {
     transform: rotate(360deg);
   }
+}
+
+.webring {
+  position: absolute;
+  bottom: 8px;
+  left: 0px;
+  width: 100%;
+  font-size: calc(10px + 1vmin);
+  text-align: center;
 }
