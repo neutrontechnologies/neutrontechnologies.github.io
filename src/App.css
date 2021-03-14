@@ -29,6 +29,7 @@ a:hover {
 
 a {
   color:var(--primary-colour);
+  transition: all .5s ease;
 }
 
 .App-header {
